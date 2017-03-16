@@ -63,6 +63,10 @@ $("#b4d").click(function() {
 	window.open("assets/Resume-Yip.pdf");
 });
 
+$("#b4e").click(function() {
+	window.open("https://www.linkedin.com/in/drrnyip");
+});
+
 $('.nav a').click(function(){
 	$('#navvy').collapse('hide');
 });
