@@ -60,7 +60,7 @@ $("#b4c").click(function() {
 });
 
 $("#b4d").click(function() {
-	window.open("assets/Resume-Yip.pdf");
+	window.open("assets/Resume - Yip.pdf");
 });
 
 $("#b4e").click(function() {
