@@ -38,8 +38,16 @@
 	src: url("Iron Latch.TTF");
 }
 
+.navbar-fixed-top.opaque{
+	background-color: #2c2c2c;
+	transition: background-color 2s ease 0s;
+}
 
-
+.navbar-fixed-top {
+	background-color: transparent;
+	transition: background-color 2s ease 0s;
+	height: 75px;
+}
 
 body{
 	height: 100%;
@@ -52,9 +60,10 @@ body{
 	background-position: right top;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 95vh;
-	font-size: 0.2em;
+	height: 100vh;
+	font-size: 0.3rem;
 	margin:0;
+	margin-top: -5vh;
 	text-align: right;
 	color: #FFFFFF;
 }
@@ -97,7 +106,7 @@ p {
 	background-color: rgba(0,0,0,0);
 	color: #f9f7eb;
 	font-family: berylium;
-	font-size: 0.75em;
+	text-align: right !important;
 }
 
 kbd {
@@ -108,6 +117,7 @@ kbd {
 
 a:hover{
 	cursor:pointer;
+	background: transparent !important;
 }
 
 
@@ -132,10 +142,6 @@ a:hover{
 	opacity: 1;
 }
 
-#blackBar{
-	color: #FFFFFF;
-}
-
 #more{
 	position: fixed;
 	right: 10px;
@@ -149,7 +155,7 @@ a:hover{
 	font-size: 3em;
 	background-color: rgba(0,0,0,0);
 	padding-bottom: 50px;
-	
+
 }
 
 #profile{
@@ -171,7 +177,7 @@ a:hover{
 	color: #5e7c64;
 }
 
-#profile small{ 
+#profile small{
 	color: #5e7c64;
 }
 
@@ -184,7 +190,7 @@ a:hover{
 }
 
 #details{
-	border-radius: 10%;	
+	border-radius: 10%;
 	text-align: left;
 }
 
@@ -192,7 +198,7 @@ a:hover{
 	color: #5e7c64;
 	font-family: berylium;
 	font-size: 0.9em;
-	
+
 }
 
 #education{
@@ -213,8 +219,8 @@ a:hover{
 	background-color: #f9f7eb;
 }
 
-#technicalSkills h2{ 
-	color: #5e7c64;	
+#technicalSkills h2{
+	color: #5e7c64;
 }
 
 #technicalSkills p{
@@ -327,7 +333,7 @@ a:hover{
 	overflow: auto;
 	margin: 0;
 	color: #cdcdc0;
-	
+
 }
 
 .contactCats {
@@ -350,7 +356,7 @@ a:hover{
 }
 
 #blackBar{
-	background-color: #000000;
+	background-color: #2c2c2c;
 	height:7vh;
 }
 
@@ -381,7 +387,8 @@ li a{
 		display: block;
 	}
 	.navbar-collapse {
-		border-top: 1px solid transparent;
+		border-top: 1px ridge 2c2c2c;
+		background-color: #2c2c2c !important;
 		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 	}
 	.navbar-fixed-top {
@@ -411,12 +418,8 @@ li a{
 
 }
 @media (max-width: 767px){
-	h1{font-size:0.85em;}
-	h2{font-size: 2.25em;}
-	h3{font-size: 2em;}
 	small{font-size: 2.5em;}
 	p{font-size: 0.5em;}
-	#quote{ font-size: 0.65em;}
 	kbd{font-size: 0.35em;}
 
 	#bg{
@@ -435,4 +438,50 @@ li a{
 	#title h2{
 		font-size: 2em;
 	}
+}
+
+/* effect-shine */
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,24,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+	background: transparent;
+	color: #FFFFFF;
+	height: 100%;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.navbar-nav li a{
+	color: #ffffff ;
+	margin-top: 13px;
+	font-size: 2.1rem;
+}
+
+.navbar-brand img{
+	height: 50px;
+	color: white;
+}
+
+#navvy.navbar-collapse.collapse.in{
+	max-height: none !important;
+	max-width: none !important;
+	width: 100% !important;
+}
+
+.navbar-toggle .icon-bar {
+	margin-top: 15px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
 }

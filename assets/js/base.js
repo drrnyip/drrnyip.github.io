@@ -110,3 +110,12 @@ function pr3(){
 function pr4(){
 	window.open("http://www.launchisland.com/");
 }
+
+$(window).scroll(function(){
+	if($(this).scrollTop() > 350){
+		$('.navbar-fixed-top').addClass('opaque');
+	}
+	else {
+		$('.navbar-fixed-top').removeClass('opaque');
+	}
+})
