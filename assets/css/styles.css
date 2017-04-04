@@ -40,7 +40,6 @@
 
 .navbar-fixed-top.opaque{
 	background-color: rgba(44,44,44,0.88);
-	opacity:
 	transition: background-color 2s ease 0s;
 }
 
