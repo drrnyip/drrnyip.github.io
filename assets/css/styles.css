@@ -39,7 +39,8 @@
 }
 
 .navbar-fixed-top.opaque{
-	background-color: #2c2c2c;
+	background-color: rgba(44,44,44,0.88);
+	opacity:
 	transition: background-color 2s ease 0s;
 }
 
