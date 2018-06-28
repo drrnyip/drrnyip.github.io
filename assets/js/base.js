@@ -96,7 +96,7 @@ function te3(){
 }
 
 function pr1(){
-	window.open("http://akashicrecordsusa.com/profamily2");
+	window.open("https://translatorprototype1.firebaseapp.com");
 }
 
 function pr2(){
